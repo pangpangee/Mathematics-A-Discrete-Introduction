@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{ amssymb }
+\usepackage{amsmath}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage[shortlabels]{enumitem}
+\title{Mathematics: A Discrete Introduction}
+\author{Written by Edward Scheinerman\\Answer sheet by Kim Taewon\\Pukyong National University\\Department of Computer Engineering}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{$\sharp$10: Quantifiers}
+\subsection*{10.1}
+
+\begin{enumerate}[a.]
+    \item $\forall x \in \mathbb{Z}, x \textrm{ is prime}.$
+    \item $\exists x \in \mathbb{Z}, \neg(x\textrm{ is prime or composite}).$
+    \item $\exists x \in \mathbb{Z}, x^2=2.$
+    \item $\forall x \in \mathbb{Z}, 5|x.$
+    \item $\exists x \in \mathbb{Z}, 7|x.$
+    \item $\forall x \in \mathbb{Z}, x^2 > 0.$
+    \item $\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, xy = 1.$
+    \item $\exists x,y \in \mathbb{Z}, x/y = 10.$
+    \item $\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, xy = 0.$
+    \item $\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, x < y.$
+\end{enumerate}
+
+\subsection*{10.2}
+\begin{enumerate}[a.]
+    \item There is an integer that is not prime.
+    \\$\exists x \in \mathbb{Z}, x \textrm{ is not prime}.$
+    \item Every integer is prime or composite.
+    \\$\forall x \in \mathbb{Z}, x\textrm{ is prime or composite}.$
+    \item Every integer is not an integer whose square is $2$.
+    \\$\forall x \in \mathbb{Z}, \neg(x^2=2).$
+    \item There is an integer that is not divisible by $5$.
+    \\$\exists x \in \mathbb{Z}, \neg(5|x).$
+    \item All integers are not divisible by $7$.
+    \\$\forall x \in \mathbb{Z}, \neg(7|x).$
+    \item There is an integer whose square is negative.
+    \\$\exists x \in \mathbb{Z}, x^2 < 0.$
+    \item There is an integer $x$ for any integer $y$ such that $xy\neq1$.
+    \\$\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, xy \neq 1.$
+    \item For every integer $x,y$, $x/y\neq=10.$
+    \\$\forall x,y \in \mathbb{Z}, x/y \neq 10.$
+    \item For every integer $x$ there is an integer $y$ such that $xy\neq0$.
+    \\$\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, xy \neq 0.$
+    \item There is an integer $x$ which is equal or greater than any integer.
+    \\$\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, x \geq y.$
+\end{enumerate}
+
+\subsection*{10.3}
+No one is invited to the party.
+
+\subsection*{10.4}
+\begin{enumerate}[a.]
+    \item False
+    \item True
+    \item True
+    \item True
+    \item False
+    \item True
+    \item True
+    \item True
+\end{enumerate}
+
+\subsection*{10.5}
+\begin{enumerate}[a.]
+    \item $\exists x \in \mathbb{Z}, x \geq 0.$
+    \\There is an integer that is greater than or equal to $0$.
+    \item $\forall x \in \mathbb{Z}, x \neq x+1.$
+    \\Every integer $x$ is not equal to $x+1$.
+    \item $\forall x \in \mathbb{Z}, x \leq 10.$
+    \\All integers are less or equal to $10$.
+    \item $\exists x \in \mathbb{Z}, x + x \neq 2x.$
+    \\There is an integer $x$ such that $x + x \neq 2x.$
+    \item $\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, x \leq y.$
+    \\For every integer $x$ there is an integer $y$ such that $x \leq y$.
+    \item $\exists x \in \mathbb{Z}, \exists y \in \mathbb{Z}, x \neq y.$
+    \\There is an integer $x$ such that there is an integer $y$ which satisfies $x \neq y$.
+    \item $\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, x + y \neq 0.$
+    \\There is an integer $x$ for any integer $y$ such that $x+y\neq0$.
+\end{enumerate}
+
+\subsection*{10.6}
+$$\begin{aligned}
+&\forall x, \forall y, \textrm{assertions about }x\textrm{ and }y\\
+&\forall y, \forall x, \textrm{assertions about }x\textrm{ and }y\end{aligned}$$
+
+These two statements mean the same thing, since we have "uninterrupted subsequences of quantifiers of the same type". Likewise, the following statements mean the same thing.
+
+$$\begin{aligned}
+&\exists x, \exists y, \textrm{assertions about }x\textrm{ and }y\\
+&\exists y, \exists x, \textrm{assertions about }x\textrm{ and }y\end{aligned}$$
+
+"Being able to swap the use of the variables is of course due to the fact that variables are just 'dummies', and can therefore be replaced by other variables." Check: \url{https://math.stackexchange.com/q/3515811}.
+\end{document}
